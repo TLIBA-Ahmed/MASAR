@@ -4,7 +4,7 @@
 
 Le projet est initialisé sur la branche `main` et relié au dépôt privé `TLIBA-Ahmed/masar-social-care`, à la demande de l'utilisateur. Les sources frontend/backend, migrations, configurations d'exemple, tests, documentation et les 46 références originales sont versionnés. Les exclusions existantes conservent `.env`, les bases et documents privés locaux, caches, dépendances, sorties de build et artefacts de modèles hors du dépôt ; seul le registre des modèles est inclus. Le contrôle des fichiers préparés ne détecte ni valeur secrète de l'environnement local ni jeton ou clé correspondant aux motifs recherchés. Les références sont conservées octet pour octet, avec contrôle SHA256 local. Aucun déploiement externe.
 
-Validation frontend : `npm run lint`, **65 tests frontend** et `npm run build` réussis. L'avertissement existant de taille du chunk Three.js reste non bloquant.
+Validation : `npm run lint`, **65 tests frontend**, **117 tests backend sur une base isolée** et `npm run build` réussis. Les **353 fichiers** du push initial ont été comparés au dépôt distant, avec les mêmes chemins et empreintes Git ; le dépôt est privé, sa branche par défaut est `main` et `.env` en est absent. Le contrôle SHA256 confirme que les **46 références** locales sont inchangées et identiques aux objets versionnés. L'avertissement existant de taille du chunk Three.js reste non bloquant.
 
 ## Incrément — accès à la génération de recommandations (17 novembre 2026)
 
