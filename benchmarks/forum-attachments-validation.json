@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-17",
+  "environment": "local synthetic demonstration",
+  "migration": "017",
+  "backend_full_suite": {
+    "passed": 96,
+    "seconds": 503.31,
+    "note": "Full suite before five complementary attachment tests; see final targeted run."
+  },
+  "backend_final_attachments": {
+    "passed": 15,
+    "seconds": 76.26,
+    "command": "python -m pytest backend/tests/test_forum_attachments.py -q --tb=line"
+  },
+  "frontend": { "passed": 59, "command": "npm test" },
+  "lint": { "passed": true, "command": "npm run lint" },
+  "build": {
+    "passed": true,
+    "command": "npm run build",
+    "note": "Existing non-blocking Three.js chunk-size warning."
+  },
+  "browser": {
+    "passed": 1,
+    "spec": "tests/e2e/forum-attachments.spec.ts",
+    "checks": ["post", "comment", "private message", "download", "reload", "Arabic RTL", "non-member conversation isolation"]
+  },
+  "backup": {
+    "archive_contents_tested": true,
+    "new_full_restore_drill_executed": false
+  }
+}

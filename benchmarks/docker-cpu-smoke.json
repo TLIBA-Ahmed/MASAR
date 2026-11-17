@@ -1,0 +1,57 @@
+{
+  "platform": "Docker Linux / Python 3.13",
+  "cpu_only": true,
+  "generation_mode": "grounded-extractive-v2",
+  "measurements": [
+    {
+      "model": "embeddings",
+      "language": "fr",
+      "http_status": 200,
+      "elapsed_ms": 2109,
+      "status": "completed",
+      "dimension": 384
+    },
+    {
+      "model": "system-one",
+      "language": "fr",
+      "http_status": 200,
+      "elapsed_ms": 17316,
+      "status": "completed"
+    },
+    {
+      "model": "slm",
+      "language": "fr",
+      "http_status": 200,
+      "elapsed_ms": 12044,
+      "status": "completed",
+      "cites_only_supplied_sources": true,
+      "answer": "Communication et coopération.",
+      "grounded_exact_excerpt": true
+    },
+    {
+      "model": "embeddings",
+      "language": "ar",
+      "http_status": 200,
+      "elapsed_ms": 1408,
+      "status": "completed",
+      "dimension": 384
+    },
+    {
+      "model": "system-one",
+      "language": "ar",
+      "http_status": 200,
+      "elapsed_ms": 14031,
+      "status": "completed"
+    },
+    {
+      "model": "slm",
+      "language": "ar",
+      "http_status": 200,
+      "elapsed_ms": 11995,
+      "status": "completed",
+      "cites_only_supplied_sources": true,
+      "answer": "التواصل والتعاون.",
+      "grounded_exact_excerpt": true
+    }
+  ]
+}

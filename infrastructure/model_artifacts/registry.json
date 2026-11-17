@@ -1,0 +1,280 @@
+{
+  "system-one": {
+    "repo": "convaiinnovations/laya-multilingual",
+    "revision": "92d22143468d8af669dc1a5a0480a2b21b4fe56e",
+    "licence": "Apache-2.0",
+    "runtime": "pytorch-cpu",
+    "quantization": "FP32",
+    "capabilities": [
+      "resource-relevance",
+      "query-routing",
+      "evidence-sufficiency"
+    ],
+    "files": {
+      "rl_agent_config.json": {
+        "sha256": "25061739243b617ad88d1219ba6f8a9c86c5881ca28df024fa2d9b3b2fcc30c6",
+        "upstream_sha256": null
+      },
+      "config.json": {
+        "sha256": "7add7c041b53f7091e65908553af79ab3f077946e5f2312d510ae13b17c7c134",
+        "upstream_sha256": null
+      },
+      "model.safetensors": {
+        "sha256": "9d628fd971b700382ac6f65920a86f149777b2e748e0c955fb3b19695aa8f204",
+        "upstream_sha256": "9d628fd971b700382ac6f65920a86f149777b2e748e0c955fb3b19695aa8f204"
+      },
+      "encoder/config.json": {
+        "sha256": "83f6916d13ef0f556ac461f28308dc2bffa7ebeadee8ec9e2db5812020ea5bb4",
+        "upstream_sha256": null
+      },
+      "tokenizer/tokenizer.json": {
+        "sha256": "609d8f4c067cd3950f88594c5a802616cea245823836ef5848ee4fc40aab5b6f",
+        "upstream_sha256": "609d8f4c067cd3950f88594c5a802616cea245823836ef5848ee4fc40aab5b6f"
+      },
+      "tokenizer/tokenizer_config.json": {
+        "sha256": "424b69444bf7b5809dc2cd2e36d0bd71b8055124dd24274d6db3c655d38205e7",
+        "upstream_sha256": null,
+        "runtime_sha256": "2c0c4d82d4b4bc6b4ac40b2375e067a1645f78b381a9774248d47915f33d751f",
+        "transform": "laya 0.3.9 _fix_tokenizer_config: tokenizer class / extra_special_tokens compatibility only"
+      },
+      "README.md": {
+        "sha256": "7b23d646e1864ec70b46659ba21a2934530521a59e374d49221c62290ccef39a",
+        "upstream_sha256": null
+      }
+    },
+    "path": "system-one",
+    "status": "tested-cpu",
+    "installed_at": "2026-11-16T20:29:14Z",
+    "benchmark": "benchmarks/cpu-results.json"
+  },
+  "embeddings": {
+    "repo": "intfloat/multilingual-e5-small",
+    "revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+    "licence": "MIT",
+    "runtime": "onnx-cpu",
+    "quantization": "INT8-AVX512-VNNI",
+    "dimension": 384,
+    "capabilities": [
+      "query-embedding",
+      "passage-embedding"
+    ],
+    "files": {
+      "onnx/model_qint8_avx512_vnni.onnx": {
+        "sha256": "dd476dd0c2514e9b9be83aeb3853fac0763e0bdf4a71645407587d77c48a2d88",
+        "upstream_sha256": "dd476dd0c2514e9b9be83aeb3853fac0763e0bdf4a71645407587d77c48a2d88"
+      },
+      "onnx/config.json": {
+        "sha256": "bbb7c1333fc4b3e27fbc9cd5d2070aabcc1d4dfb99917c3633e772f97545a6b6",
+        "upstream_sha256": null
+      },
+      "onnx/tokenizer.json": {
+        "sha256": "0b44a9d7b51c3c62626640cda0e2c2f70fdacdc25bbbd68038369d14ebdf4c39",
+        "upstream_sha256": "0b44a9d7b51c3c62626640cda0e2c2f70fdacdc25bbbd68038369d14ebdf4c39"
+      },
+      "onnx/tokenizer_config.json": {
+        "sha256": "a1d6bc8734a6f635dc158508bef000f8e2e5a759c7d92f984b2c86e5ff53425b",
+        "upstream_sha256": null
+      },
+      "README.md": {
+        "sha256": "0038de97aee16258cecbad7ffda4b4febd6953e747a00e0ddbc8e6ed241e9c1c",
+        "upstream_sha256": null
+      }
+    },
+    "path": "embeddings",
+    "status": "tested-cpu",
+    "installed_at": "2026-11-16T20:29:15Z",
+    "benchmark": "benchmarks/cpu-results.json"
+  },
+  "slm": {
+    "repo": "unsloth/Qwen3-0.6B-GGUF",
+    "upstream": "Qwen/Qwen3-0.6B",
+    "revision": "50968a4468ef4233ed78cd7c3de230dd1d61a56b",
+    "licence": "Apache-2.0",
+    "runtime": "llama.cpp-cpu",
+    "quantization": "Q4_K_M",
+    "capabilities": [
+      "grounded-explanation-ar",
+      "grounded-explanation-fr"
+    ],
+    "files": {
+      "Qwen3-0.6B-Q4_K_M.gguf": {
+        "sha256": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a",
+        "upstream_sha256": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+      },
+      "README.md": {
+        "sha256": "03994ad190e9e314ae0bff6f2cf780528f09ea70e0f22a267e287c8748a850f5",
+        "upstream_sha256": null
+      }
+    },
+    "path": "slm",
+    "status": "tested-cpu",
+    "installed_at": "2026-11-16T20:29:16Z",
+    "benchmark": "benchmarks/cpu-results.json"
+  },
+  "llama.cpp": {
+    "name": "ggml-org/llama.cpp",
+    "revision": "b12444",
+    "licence": "MIT",
+    "runtime": "native-cpu",
+    "status": "tested-cpu",
+    "asset": "llama-b12444-bin-win-cpu-x64.zip",
+    "sha256": "d17f82517cf6b5ee501953cc41ca1cdea0c2fb2a0aedd62b5c61e7b4fa6437bd",
+    "upstream_sha256": "d17f82517cf6b5ee501953cc41ca1cdea0c2fb2a0aedd62b5c61e7b4fa6437bd",
+    "path": "runtime",
+    "files": {
+      "ggml-base.dll": {
+        "sha256": "5bc32ef5b78fa872dd2e07281acac313a224fb20004b275095e56dab64537e10"
+      },
+      "ggml-cpu-alderlake.dll": {
+        "sha256": "c64a52a2917d1498397ae46f3dc3b6bcdfcb7d304e39c18e58cebd12297f5c83"
+      },
+      "ggml-cpu-cannonlake.dll": {
+        "sha256": "5803415a925429b6c53d32a4360ebd18cc561daaafb8eae7d66359a7bb6644f5"
+      },
+      "ggml-cpu-cascadelake.dll": {
+        "sha256": "b74b1e80d3267f319da1adf5d00d13039af818ea66e80ef7a0a0a2dba69e8da5"
+      },
+      "ggml-cpu-cooperlake.dll": {
+        "sha256": "2d67538f99a31b121809474d298338223d542a0d9c7178087191fdc4a681c700"
+      },
+      "ggml-cpu-haswell.dll": {
+        "sha256": "731e15bc3e255958af004aa6d6a6d42f1cbca356eb9106164569aa3c06db5e27"
+      },
+      "ggml-cpu-icelake.dll": {
+        "sha256": "c0346b208e65c325a63312237620db146e666b584741fed7d310d5744f99f34f"
+      },
+      "ggml-cpu-ivybridge.dll": {
+        "sha256": "45107783bf135befcbdb8d9606edb0e158461c8b44e4e4601fd11a93b2a396ca"
+      },
+      "ggml-cpu-piledriver.dll": {
+        "sha256": "6f23cf038bbc22939e96b82d124afdbed8a49e7387e08358b5e59a7a1eaedfa7"
+      },
+      "ggml-cpu-sandybridge.dll": {
+        "sha256": "d9ec0d25aa8577401e506a20c0708926837e3ea037776babf88e1b4239f4877d"
+      },
+      "ggml-cpu-sapphirerapids.dll": {
+        "sha256": "15ea541423653e60a8c8870fa98c5b458391c04d7e6d32cc01d93fae354cabd5"
+      },
+      "ggml-cpu-skylakex.dll": {
+        "sha256": "1c46255c92a687c04e264f5cf99a503cdfb3b7c1ffec6b66e676bed4ad7db51f"
+      },
+      "ggml-cpu-sse42.dll": {
+        "sha256": "74c3fdf5340e81a9bee3f9efe206c40004d33f68f86ffaae5f63fe33a86bcaf4"
+      },
+      "ggml-cpu-x64.dll": {
+        "sha256": "3baefaa5349048c0dc9f2949d8ef11613a8dc8ef85a40e94f185e2b4b0ffb00a"
+      },
+      "ggml-cpu-zen4.dll": {
+        "sha256": "6a7e9447b5731c8dea957729624d45e468516c7175e45fe11a8bba9663bcd60f"
+      },
+      "ggml-rpc-server.exe": {
+        "sha256": "c82a0f71b757a5678c9ce631f5f0f9531a2a64703fadba5d10b611b9524f8d1a"
+      },
+      "ggml-rpc.dll": {
+        "sha256": "c6dcb22673d6685e6483f45d314c287bf7247494816688d670b82b55b76be7d5"
+      },
+      "ggml.dll": {
+        "sha256": "7e3660ccfa322e2f0cd7eeb04eacde7a57e53ba9bfb9ff6c2097d1bbb7d65e86"
+      },
+      "libomp.dll": {
+        "sha256": "a12116ba72d1d6820407cf30be23da04ce79d6bb8a71a5ee71759c5a1faa6f1c"
+      },
+      "llama-batched-bench-impl.dll": {
+        "sha256": "9a0db2a722cb1b9a18caf11dc5a558e3c8b5ef92087b438815602351b833e1ac"
+      },
+      "llama-batched-bench.exe": {
+        "sha256": "260bfdcdb5b671b3ac4a476abe10d2c00c2773bb90194b891f5176e15ae4a5df"
+      },
+      "llama-bench-impl.dll": {
+        "sha256": "baece85fb7e6c1890450cfee3160bdd989fab605664c48d2916c4e8cbccb7470"
+      },
+      "llama-bench.exe": {
+        "sha256": "ccac458cc25f6054ecbf6d17c775b74a792f807f61c4dbc212cc6edeca50aaa0"
+      },
+      "llama-cli-impl.dll": {
+        "sha256": "03e0ff01d9d8445a25832dfba80dd9403195fc3b5ff9b9b1ecb27e9f6aeacfe1"
+      },
+      "llama-cli.exe": {
+        "sha256": "514ddd4891ab40de63f7535634a4f140badb96bf7e20272af1774471e99e5ae4"
+      },
+      "llama-common.dll": {
+        "sha256": "481f3df96968ec0d851df54b05a1ceaa50ea2c12e6acd20c78b2a310a78cdaad"
+      },
+      "llama-completion-impl.dll": {
+        "sha256": "ab93034c5ef4628e26af07704eb65e5e1a11554593820b79eac4215caa4c2c86"
+      },
+      "llama-completion.exe": {
+        "sha256": "bd21c220cf08565a0ed1fc614759317d20a352f87738f16f277cb30d1a848594"
+      },
+      "llama-connect.exe": {
+        "sha256": "9f2bdd778f96971995a80add8d6b2478c156f799933337a19dbf80cdaad21b1d"
+      },
+      "llama-fit-params-impl.dll": {
+        "sha256": "3f6c1c58686ef5a2663a9b6f1906ff7e564d463cab57807ba0a61c4acf74b346"
+      },
+      "llama-fit-params.exe": {
+        "sha256": "82db1ba32b14e77d51175b4d45b1423d1db9b9d273df603a1138ed505df44793"
+      },
+      "llama-gemma3-cli.exe": {
+        "sha256": "7c3bd6ace4ffedbe6f31f4e1c6f0ed737e9aaafe8a667d644315695a40b2dcc6"
+      },
+      "llama-gguf-split.exe": {
+        "sha256": "8a01d32f5f2fe3f5c8472d74d1795e4e37b6a1332725241670764076ddcc11cf"
+      },
+      "llama-imatrix.exe": {
+        "sha256": "4948801c1f004c81a399a5d91bd1309f9d4a94be6608205de077387e4e889c47"
+      },
+      "llama-llava-cli.exe": {
+        "sha256": "7c3bd6ace4ffedbe6f31f4e1c6f0ed737e9aaafe8a667d644315695a40b2dcc6"
+      },
+      "llama-minicpmv-cli.exe": {
+        "sha256": "7c3bd6ace4ffedbe6f31f4e1c6f0ed737e9aaafe8a667d644315695a40b2dcc6"
+      },
+      "llama-mtmd-cli.exe": {
+        "sha256": "5448345ae6b30771e4e692b956bf42bbc4a326042c33c0d5abe05371b77a7d94"
+      },
+      "llama-mtmd-debug.exe": {
+        "sha256": "7b24e9ccf7943770eaf13bf5131b758eb553e97157cc0ddaa6819f33a529b93b"
+      },
+      "llama-perplexity-impl.dll": {
+        "sha256": "8a50d6e510deb65c414cc9e664787faaf3f2696f28105bec4b6cca78dfd11c66"
+      },
+      "llama-perplexity.exe": {
+        "sha256": "995584bd5dd811c5e0d12ce7297c49a20d30f6e95ee911c1c70b114ed0654ea1"
+      },
+      "llama-quantize-impl.dll": {
+        "sha256": "06f79f8e1e9e8d705e11b02a6f4c708afe4160bcf3af660a110b257104395126"
+      },
+      "llama-quantize.exe": {
+        "sha256": "16af254dd307ff9640e63fee51ea874e3029785da05edfce53bc67d81001fd12"
+      },
+      "llama-qwen2vl-cli.exe": {
+        "sha256": "7c3bd6ace4ffedbe6f31f4e1c6f0ed737e9aaafe8a667d644315695a40b2dcc6"
+      },
+      "llama-results.exe": {
+        "sha256": "d84b9e4cfb72a960d35d772b2f8690cf74985888ac0280e55f14efbd2e32c0c6"
+      },
+      "llama-server-impl.dll": {
+        "sha256": "182532dccb839ffbf93e0baf42c25470d8fdd25c9772a8b2c59a17e9cc2c6cb7"
+      },
+      "llama-server.exe": {
+        "sha256": "3876831907e56e814ac626856267751652f05716f3b46048597acce590d399d5"
+      },
+      "llama-tokenize.exe": {
+        "sha256": "48e427237742b58dcce7343f658e63e233b31cc04697a1e4841f8008f62513f3"
+      },
+      "llama-tts.exe": {
+        "sha256": "fb288c88d155f57b1086d8bd1ab5ecbbf38a9d9394cfae80e4202cf9960df95c"
+      },
+      "llama.dll": {
+        "sha256": "9f1ddb53eabafcbd988ef29907ab1dc2c6e815f03c3f5846e5bb0f8d5776b480"
+      },
+      "llama.exe": {
+        "sha256": "cb93bbda9b5a005abe25f247917fc85d14bded630d360783c1c54f98b0ff8d87"
+      },
+      "mtmd.dll": {
+        "sha256": "64fd00e8fee2bb938b2b3d867b912c325336f7ff0dca3b1ee3ba8b0e4e51724c"
+      }
+    }
+  }
+}

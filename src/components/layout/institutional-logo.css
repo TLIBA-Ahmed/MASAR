@@ -1,0 +1,33 @@
+.institutional-logo {
+  position: relative;
+  width: 248px;
+  max-width: 100%;
+  aspect-ratio: 716 / 280;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #fff;
+}
+
+/* Frame the supplied image's white margins without altering the original file. */
+.institutional-logo img {
+  position: absolute;
+  top: -18%;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.sidebar-institutional-logo {
+  width: calc(100% - 34px);
+  margin: 0 17px 18px;
+}
+
+.collapsed .sidebar-institutional-logo {
+  display: none;
+}
+
+.login-institutional-logo {
+  margin: 0 auto 24px;
+}

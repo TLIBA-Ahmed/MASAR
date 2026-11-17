@@ -1,0 +1,363 @@
+/* Readable ERP typography and containment for asynchronous chart resizing. */
+.workspace {
+  width: 100%;
+  max-width: 100%;
+}
+.main-content {
+  min-width: 0;
+}
+.main-chart {
+  overflow: hidden;
+}
+.journey-overview {
+  overflow: hidden;
+}
+.nav-item {
+  font-size: 12px;
+}
+.nav-group-title {
+  font-size: 11px;
+}
+.sidebar-note {
+  font-size: 9px;
+}
+.center-switch strong {
+  font-size: 11px;
+}
+.center-switch small {
+  font-size: 10px;
+}
+.profile strong {
+  font-size: 12px;
+}
+.profile small {
+  font-size: 10px;
+}
+.breadcrumb {
+  font-size: 11px;
+}
+.kpi-top {
+  font-size: 12px;
+}
+.kpi-caption {
+  font-size: 10px;
+}
+.section-heading p {
+  font-size: 12px;
+}
+.stage-summary h3 {
+  font-size: 12px;
+}
+.stage-summary-top small {
+  font-size: 10px;
+}
+.chart-legend {
+  font-size: 11px;
+}
+.agenda-item h3 {
+  font-size: 12px;
+}
+.agenda-item p {
+  font-size: 10px;
+}
+.person-cell strong {
+  font-size: 12px;
+}
+.person-cell small {
+  font-size: 9px;
+}
+.data-table td {
+  font-size: 11px;
+}
+.data-table th {
+  font-size: 10px;
+}
+.stage-label {
+  font-size: 11px;
+}
+.intelligence-link h3 {
+  font-size: 12px;
+}
+.intelligence-link p {
+  font-size: 10px;
+}
+.dashboard-footnote {
+  font-size: 9px;
+}
+.badge {
+  font-size: 11px;
+}
+.info-box {
+  font-size: 12px;
+}
+.button {
+  font-size: 13px;
+}
+.field {
+  font-size: 12px;
+}
+.shared-field-hint,
+.field-help {
+  font-size: 10px;
+}
+.login-content > p {
+  font-size: 14px;
+}
+.login-disclaimer {
+  font-size: 11px;
+}
+.login-submit {
+  font-size: 14px;
+}
+.login-content > .badge {
+  font-size: 11px;
+}
+.login-center {
+  font-size: 11px;
+}
+.art-heading p {
+  font-size: 13px;
+}
+.art-stage > div > strong {
+  font-size: 12px;
+}
+.art-stage > div > small {
+  font-size: 10px;
+}
+.art-bottom p {
+  font-size: 11px;
+}
+.form-section-nav > button {
+  font-size: 12px;
+}
+.case-tabs > button {
+  font-size: 12px;
+}
+.substage-list label {
+  font-size: 12px;
+}
+.substage-list select {
+  font-size: 10px;
+}
+.substage-panel p {
+  font-size: 12px;
+}
+.journey-stepper strong {
+  font-size: 11px;
+}
+.journey-stepper small {
+  font-size: 9px;
+}
+.case-person p,
+.case-meta {
+  font-size: 12px;
+}
+.timeline-heading strong {
+  font-size: 13px;
+}
+.timeline-event p {
+  font-size: 12px;
+}
+.timeline-event > small {
+  font-size: 10px;
+}
+.goal-item {
+  font-size: 12px;
+}
+.goal-item small {
+  font-size: 10px;
+}
+.team-person strong {
+  font-size: 12px;
+}
+.team-person small {
+  font-size: 10px;
+}
+.rec-reasons p {
+  font-size: 12px;
+}
+.activity-card-content > p {
+  font-size: 12px;
+}
+.rec-meta {
+  font-size: 11px;
+}
+.confirmed-goals > span {
+  font-size: 12px;
+}
+.document-card p {
+  font-size: 12px;
+}
+.document-card-bottom {
+  font-size: 10px;
+}
+.post-body {
+  color: var(--text);
+}
+.table-scroll {
+  min-width: 0;
+  position: relative;
+}
+.topbar-start {
+  min-width: 0;
+}
+.breadcrumb {
+  min-width: 0;
+  overflow: hidden;
+}
+:root[lang='fr'] .nav-item {
+  font-size: 11px;
+}
+:root[lang='fr'] .stage-summary h3 {
+  font-size: 10px;
+}
+:root[lang='fr'] .journey-stepper strong {
+  font-size: 10px;
+}
+:root[data-theme='dark'] .stage-summary h3 {
+  color: #a2b6c0;
+}
+:root[data-theme='dark'] .person-cell strong {
+  color: #d7e6ec;
+}
+:root[data-theme='dark'] .data-table td {
+  color: #afc2cb;
+}
+:root[data-theme='dark'] .overview-strip-title strong {
+  color: #adc1c9;
+}
+:root[data-theme='dark'] .info-box {
+  background: #203b4a;
+  border-color: #2d4b5c;
+  color: #b1cad7;
+}
+:root[data-theme='dark'] .info-box.orange {
+  background: #3b3527;
+  border-color: #514735;
+  color: #d3be96;
+}
+:root[data-theme='dark'] .info-box.green {
+  background: #213c34;
+  border-color: #2b5143;
+  color: #a5d2b9;
+}
+:root[data-theme='dark'] .form-section-nav > button.active,
+:root[data-theme='dark'] .category-chips > button.active {
+  background: #24483b;
+  color: #9bd6b9;
+}
+:root[data-theme='dark'] .message.mine,
+:root[data-theme='dark'] .selected-participant {
+  background: #234639;
+  border-color: #35654b;
+  color: #bddac8;
+}
+:root[data-theme='dark'] .kanban-column {
+  background: #13252e;
+}
+:root[data-theme='dark'] .print-preview-scroll {
+  color: #263238;
+}
+@media (max-width: 1250px) {
+  .stage-summary h3 {
+    font-size: 11px;
+  }
+  .kpi-caption {
+    font-size: 9px;
+  }
+  .nav-item {
+    font-size: 11px;
+  }
+  .case-meta {
+    font-size: 10px;
+  }
+  .substage-list label {
+    font-size: 11px;
+  }
+}
+@media (max-width: 760px) {
+  .topbar-start {
+    flex: 1;
+    min-width: 0;
+  }
+  .breadcrumb {
+    font-size: 9px;
+    max-width: 100%;
+    gap: 6px;
+  }
+  .breadcrumb > strong {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .topbar-actions {
+    flex-shrink: 0;
+    gap: 3px;
+  }
+  .topbar-actions > .icon-button {
+    width: 27px;
+  }
+  .sidebar:not(.mobile-open) {
+    visibility: hidden;
+  }
+  .sidebar.mobile-open {
+    visibility: visible;
+  }
+  .kpi-top {
+    font-size: 11px;
+  }
+  .kpi-caption {
+    font-size: 9px;
+  }
+  .stage-summary h3 {
+    font-size: 11px;
+  }
+  .section-heading p {
+    font-size: 11px;
+  }
+  .section-heading h2 {
+    font-size: 15px;
+  }
+  .heading-actions .button {
+    font-size: 12px;
+  }
+  .person-cell strong {
+    font-size: 12px;
+  }
+  .stage-label {
+    font-size: 10px;
+  }
+  .data-table th,
+  .data-table td {
+    font-size: 10px;
+  }
+  .overview-strip {
+    font-size: 10px;
+  }
+  .page-heading p {
+    font-size: 12px;
+  }
+  .login-content > p {
+    font-size: 13px;
+  }
+  .login-disclaimer {
+    font-size: 11px;
+  }
+  .case-meta {
+    font-size: 10px;
+  }
+  .case-person p {
+    font-size: 10px;
+  }
+  .substage-list label {
+    font-size: 11px;
+  }
+  .case-tabs > button {
+    font-size: 11px;
+  }
+  .form-section-nav > button {
+    font-size: 11px;
+  }
+  .smart-search-hero > p {
+    font-size: 12px;
+  }
+}

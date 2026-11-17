@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-17",
+  "environment": "local synthetic demonstration",
+  "migration_head": "020",
+  "backend": {
+    "command": "python -m pytest backend/tests -q --tb=short --junitxml=.tmp/governorate-backend-results.xml",
+    "tests": 117,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 687.744
+  },
+  "frontend": { "command": "npm test", "tests": 65, "failures": 0 },
+  "lint": { "command": "npm run lint", "passed": true },
+  "build": { "command": "npm run build", "passed": true, "nonblocking_warning": "Existing Three.js chunk exceeds 500 kB." },
+  "docker": {
+    "api_build_passed": true,
+    "frontend_build_passed": true,
+    "api_catalogue_read_without_network": true,
+    "frontend_geography_read_without_network": true,
+    "new_deployment_started": false
+  },
+  "browser": {
+    "unique_scenarios_validated": 18,
+    "strategy": "Full run followed by targeted reruns after corrections; not a claim that the first full run passed unchanged.",
+    "new_entry_scenarios_passed": 5,
+    "regression_specs": ["child-journey", "fullstack", "privacy-journey", "forum-attachments"],
+    "final_profile_switch_reruns": {
+      "assigned_children_permissions": "passed",
+      "identity_scope_and_exports": "passed",
+      "forum_attachments_and_private_conversation_isolation": "passed"
+    },
+    "final_forum_rerun_seconds": 39.3,
+    "screenshots": [".tmp/welcome-governorates-ar.png", ".tmp/welcome-governorates-fr.png", ".tmp/welcome-governorates-mobile.png", ".tmp/login-governorate-fr.png"]
+  },
+  "retained_database_records": {
+    "governorates": 24,
+    "centres": 3,
+    "unmapped_centres": 0,
+    "employees": 6,
+    "explicit_demo_profiles": 6,
+    "children": 40,
+    "cases": 40,
+    "form_definitions": 15,
+    "document_versions": 97
+  },
+  "geography": {
+    "features": 24,
+    "asset": "public/geography/tunisia-governorates.geojson",
+    "source_revision": "9469f09",
+    "source_sha256": "c8961d7e933079295bdec215c4783c93774696f0600419a2f11779d81f8fb885",
+    "coordinates_changed": false,
+    "gps_used": false
+  },
+  "official_ehouwiya": "not configured; DemoIdentityProvider only",
+  "official_cdis_registry": "unavailable; existing synthetic centres explicitly labelled",
+  "external_deployment": false
+}

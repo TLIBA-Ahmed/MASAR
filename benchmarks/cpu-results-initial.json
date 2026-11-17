@@ -1,0 +1,114 @@
+{
+  "measured_at": "2026-11-16T20:40:25Z",
+  "platform": "Windows-11-10.0.22000-SP0",
+  "cpu": "Intel Core i5-12500H",
+  "logical_threads": 16,
+  "physical_cores": 12,
+  "total_ram_gib": 15.63,
+  "threads_per_model": 4,
+  "concurrency": 1,
+  "context_tokens": 2048,
+  "method": "Fresh worker per request, local filesystem cache may be warm; includes imports/model load; sampled process-tree RSS every 50 ms. Synthetic prompts, no professional quality certification.",
+  "measurements": [
+    {
+      "language": "fr",
+      "model": "embeddings",
+      "wall_ms": 1253,
+      "peak_process_tree_rss_mib": 426.5,
+      "status": "completed",
+      "elapsed_ms": 1140,
+      "dimension": 384,
+      "norms": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "relevant_similarity": 0.93074,
+      "unrelated_similarity": 0.85107
+    },
+    {
+      "language": "fr",
+      "model": "system-one",
+      "wall_ms": 14721,
+      "peak_process_tree_rss_mib": 2375.1,
+      "status": "completed",
+      "result": [
+        {
+          "id": "relevant",
+          "score": 59.7125,
+          "uncalibrated": true
+        },
+        {
+          "id": "unrelated",
+          "score": 52.912499999999994,
+          "uncalibrated": true
+        }
+      ],
+      "elapsed_ms": 13358
+    },
+    {
+      "language": "fr",
+      "model": "slm",
+      "wall_ms": 2631,
+      "peak_process_tree_rss_mib": 919.1,
+      "status": "completed",
+      "result": {
+        "answer": "La ressource guide-1 permet de dessiner ensemble pour exprimer les émotions.",
+        "source_ids": [
+          "guide-1"
+        ]
+      },
+      "elapsed_ms": 2489
+    },
+    {
+      "language": "ar",
+      "model": "embeddings",
+      "wall_ms": 1553,
+      "peak_process_tree_rss_mib": 411.7,
+      "status": "completed",
+      "elapsed_ms": 1334,
+      "dimension": 384,
+      "norms": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "relevant_similarity": 0.93027,
+      "unrelated_similarity": 0.85664
+    },
+    {
+      "language": "ar",
+      "model": "system-one",
+      "wall_ms": 12758,
+      "peak_process_tree_rss_mib": 2370.4,
+      "status": "completed",
+      "result": [
+        {
+          "id": "relevant",
+          "score": 49.76,
+          "uncalibrated": true
+        },
+        {
+          "id": "unrelated",
+          "score": 46.86,
+          "uncalibrated": true
+        }
+      ],
+      "elapsed_ms": 11770
+    },
+    {
+      "language": "ar",
+      "model": "slm",
+      "wall_ms": 1998,
+      "peak_process_tree_rss_mib": 919.3,
+      "status": "completed",
+      "result": {
+        "answer": "الرسم الجماعي للتعبير عن المشاعر",
+        "source_ids": [
+          "guide-1"
+        ]
+      },
+      "elapsed_ms": 1851
+    }
+  ]
+}

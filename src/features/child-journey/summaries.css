@@ -1,0 +1,450 @@
+.journey-individual-layout.has-intelligent-summary {
+  grid-template-columns: minmax(0, 1fr);
+}
+.intelligent-journey-map {
+  position: relative;
+  min-width: 0;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--surface);
+  padding: 20px;
+  box-shadow: 0 12px 45px #153e5108;
+  isolation: isolate;
+}
+.journey-story-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 0 0 20px;
+  position: relative;
+  z-index: 4;
+}
+.journey-story-toolbar > div {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex-wrap: wrap;
+}
+.journey-story-toolbar strong {
+  font-size: 13px;
+}
+.journey-story-toolbar small {
+  font-size: 10px;
+  color: var(--muted);
+  margin-inline-start: 6px;
+}
+.journey-story-toolbar .button {
+  font-size: 11px;
+  padding: 8px 10px;
+}
+.journey-story-grid.with-summaries {
+  display: grid;
+  grid-template-columns: minmax(215px, 1fr) minmax(300px, 1.45fr) minmax(215px, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+.journey-story-grid > .tunisia-map-card {
+  position: relative;
+  z-index: 1;
+  box-shadow: none;
+}
+.journey-story-grid.with-summaries .tunisia-map-viewport {
+  height: 850px;
+}
+.journey-story-grid .journey-map-topline {
+  padding: 14px 12px;
+}
+.journey-story-grid .journey-map-topline > span {
+  font-size: 10px;
+}
+.journey-story-grid .journey-map-legend {
+  gap: 10px;
+  padding: 15px 10px;
+}
+.journey-story-grid .journey-map-caption {
+  font-size: 9px;
+}
+.journey-story-grid .map-sea-label {
+  font-size: 10px;
+}
+.summary-card-rail {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-width: 0;
+  position: relative;
+  z-index: 3;
+}
+.rail-end {
+  padding-top: 130px;
+  gap: 24px;
+}
+.journey-summary-card {
+  border: 1px solid var(--border);
+  border-radius: 13px;
+  background: var(--surface);
+  padding: 17px;
+  box-shadow: 0 5px 18px #153e5108;
+  min-width: 0;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+  border-top: 3px solid #9eacb5;
+  animation: summary-appear 0.35s ease-out;
+}
+.journey-summary-card.state-completed {
+  border-top-color: #369b80;
+}
+.journey-summary-card.is-current {
+  border-top-color: #3679bb;
+  background: linear-gradient(160deg, #438bd009, transparent 60%), var(--surface);
+}
+.journey-summary-card.state-pending {
+  border-top-color: #cc8a2e;
+}
+.journey-summary-card.state-future {
+  border-style: dashed;
+}
+.journey-summary-card.is-selected {
+  box-shadow:
+    0 0 0 2px #3679bb22,
+    0 12px 22px #153e510b;
+}
+.summary-card-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.summary-step-number {
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 600;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.is-current .summary-step-number {
+  color: #3679bb;
+}
+.summary-card-heading h3 {
+  font-size: 12px;
+  line-height: 1.6;
+  font-weight: 650;
+  margin: 0 0 6px;
+}
+.summary-card-state {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+  color: var(--muted);
+}
+.summary-card-period {
+  font-size: 9px;
+  color: var(--muted);
+  margin-top: 12px;
+}
+.summary-card-narrative {
+  font-size: 11px;
+  line-height: 1.85;
+  margin: 11px 0 13px;
+  color: var(--text);
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space: pre-line;
+}
+.summary-card-narrative.expanded {
+  display: block;
+  overflow: visible;
+}
+.summary-card-facts {
+  margin: 0;
+  display: grid;
+  gap: 9px;
+}
+.summary-card-facts > div {
+  border-inline-start: 2px solid #369b8026;
+  padding-inline-start: 8px;
+}
+.summary-card-facts dt {
+  font-size: 9px;
+  color: var(--muted);
+  margin-bottom: 2px;
+}
+.summary-card-facts dd {
+  margin: 0;
+  font-size: 10px;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  overflow-wrap: anywhere;
+}
+.summary-card-facts dd.expanded {
+  display: block;
+  overflow: visible;
+}
+.summary-expand,
+.summary-review-link {
+  border: 0;
+  background: none;
+  color: var(--primary);
+  font-size: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 0;
+  text-align: start;
+}
+.summary-expand[aria-expanded='true'] svg {
+  transform: rotate(180deg);
+}
+.summary-provenance {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-size: 8px;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+  padding-top: 11px;
+}
+.summary-validation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 8px 0;
+  font-size: 9px;
+  color: #a87327;
+}
+.summary-validation .badge {
+  font-size: 8px;
+  padding: 3px 6px;
+}
+.summary-card-actions {
+  display: flex;
+  gap: 5px;
+  border-top: 1px solid var(--border);
+  padding-top: 9px;
+}
+.summary-card-actions button {
+  border: 0;
+  background: var(--bg);
+  color: var(--text);
+  border-radius: 5px;
+  padding: 6px;
+  font-size: 10px;
+  cursor: pointer;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.summary-card-actions button:hover {
+  background: #3679bb13;
+}
+.summary-review-link {
+  padding-bottom: 0;
+  font-size: 9px;
+}
+.summary-no-evidence {
+  font-size: 10px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+.summary-connectors {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+  overflow: visible;
+}
+.summary-connectors path {
+  fill: none;
+  stroke: #6b9da8;
+  stroke-width: 1.1;
+  opacity: 0.45;
+}
+.summary-connectors path.selected {
+  stroke: #3679bb;
+  stroke-width: 1.8;
+  opacity: 0.8;
+}
+.summary-privacy-note {
+  padding: 20px 8px;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.9;
+}
+.summary-privacy-note svg {
+  color: #369b80;
+}
+.journey-summary-loading {
+  font-size: 12px;
+  padding: 20px;
+}
+.summary-evidence-list,
+.summary-history-list {
+  display: grid;
+  gap: 15px;
+}
+.summary-source {
+  border: 1px solid var(--border);
+  border-radius: 11px;
+  padding: 20px;
+  min-width: 0;
+}
+.summary-source > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+.summary-source h3 {
+  font-size: 14px;
+  margin: 0;
+}
+.summary-source small {
+  font-size: 11px;
+  display: block;
+  color: var(--muted);
+  margin: 9px 0;
+}
+.summary-source .narrative {
+  white-space: pre-line;
+  font-size: 12px;
+  line-height: 1.9;
+  overflow-wrap: anywhere;
+}
+.summary-source > p {
+  font-size: 12px;
+}
+.summary-review-panel {
+  display: grid;
+  gap: 16px;
+}
+.summary-review-panel textarea {
+  min-height: 100px;
+}
+.journey-current-details {
+  border: 1px solid var(--border);
+  border-radius: 13px;
+  padding: 15px 20px;
+}
+.journey-current-details > summary {
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+.journey-current-details .journey-current-panel {
+  margin-top: 15px;
+  max-width: 580px;
+}
+.intelligent-journey-map.is-fullscreen {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  overflow: auto;
+  border-radius: 0;
+  padding: 25px;
+  background: var(--bg);
+}
+.intelligent-journey-map:fullscreen {
+  overflow: auto;
+  padding: 28px;
+  background: var(--bg);
+}
+.is-fullscreen .journey-story-grid {
+  max-width: 1550px;
+  margin: auto;
+}
+.is-fullscreen .summary-card-narrative {
+  -webkit-line-clamp: 5;
+}
+@keyframes summary-appear {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 1190px) {
+  .journey-story-grid.with-summaries {
+    grid-template-columns: 1fr 1fr;
+  }
+  .journey-story-grid > .tunisia-map-card {
+    grid-column: 1/-1;
+    grid-row: 1;
+  }
+  .journey-story-grid.with-summaries .tunisia-map-viewport {
+    height: 630px;
+  }
+  .rail-end {
+    padding-top: 0;
+  }
+  .summary-connectors {
+    display: none;
+  }
+  .summary-card-rail {
+    grid-row: 2;
+  }
+  .journey-story-toolbar {
+    flex-wrap: wrap;
+  }
+  .journey-summary-card {
+    padding: 16px;
+  }
+  .summary-card-heading h3 {
+    font-size: 13px;
+  }
+  .summary-card-narrative {
+    font-size: 12px;
+  }
+  .summary-card-facts dd {
+    font-size: 11px;
+  }
+}
+@media (max-width: 620px) {
+  .intelligent-journey-map {
+    padding: 12px;
+  }
+  .journey-story-grid.with-summaries {
+    display: flex;
+    flex-direction: column;
+  }
+  .journey-story-grid > .tunisia-map-card {
+    order: -1;
+    width: 100%;
+  }
+  .journey-story-grid.with-summaries .tunisia-map-viewport {
+    height: 520px;
+  }
+  .summary-card-rail {
+    width: 100%;
+  }
+  .summary-card-rail.rail-start {
+    order: 0;
+  }
+  .summary-card-rail.rail-end {
+    order: 1;
+  }
+  .journey-story-toolbar small {
+    display: none;
+  }
+  .summary-privacy-note {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .journey-summary-card {
+    animation: none;
+    transition: none;
+  }
+}

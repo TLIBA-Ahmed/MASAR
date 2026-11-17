@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "interface_port": 5180,
+  "authorized_case_count": 6,
+  "restricted_forms_excluded": true,
+  "gateway_not_exposed": true,
+  "model_registry_entries": 4,
+  "current_model_artifacts_verified": true,
+  "blueprint_alias_verified": true,
+  "same_origin_csp": true,
+  "measured_at": "2026-11-16T22:27:45Z"
+}

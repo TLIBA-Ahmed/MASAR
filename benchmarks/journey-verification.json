@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-17",
+  "status": "passed",
+  "scope": "Local synthetic MASAR child journey; no external deployment",
+  "checks": {
+    "lint": "passed",
+    "frontend_tests": { "passed": 54, "failed": 0 },
+    "backend_tests": {
+      "passed": 70,
+      "failed": 0,
+      "database": "isolated temporary PostgreSQL database"
+    },
+    "browser_tests": {
+      "passed": 7,
+      "failed": 0,
+      "scope": "Six targeted journey/core scenarios plus the orientation and all-entry-points scenario",
+      "coverage": [
+        "real WebGL and camera projection",
+        "automatic interactive 2D fallback",
+        "keyboard",
+        "390px mobile without horizontal overflow",
+        "FR/AR and selection persistence",
+        "rehabilitation cycle history",
+        "orientation without automatic closure",
+        "Assigned Children",
+        "groups",
+        "central case",
+        "dashboard",
+        "authorized Browser results",
+        "Forum regression"
+      ]
+    },
+    "build": {
+      "status": "passed",
+      "warning": "Lazy Three.js chunk exceeds Vite's 500kB advisory",
+      "three_js_chunk_gzip_kb": 149.13
+    }
+  },
+  "geometry": {
+    "source": "Natural Earth Admin 0 1:50m",
+    "license": "Public domain",
+    "polygons": 3,
+    "vertices": 186,
+    "runtime_external_map_requests": false
+  },
+  "runtime": {
+    "frontend_port": 5173,
+    "native_api_port": 8003,
+    "ai_mode": "local",
+    "new_ai_engine": false
+  },
+  "synthetic_scenarios": [
+    "CDIS-011 / p3",
+    "CDIS-002 / p1",
+    "CDIS-024 / p3",
+    "CDIS-025 / p3",
+    "CDIS-006 / p2",
+    "CDIS-014 / p3"
+  ],
+  "screenshots": [
+    ".tmp/tunisia-3d-detail.png",
+    ".tmp/journey-3d-fr.png",
+    ".tmp/journey-3d-ar.png",
+    ".tmp/journey-2d-fr.png",
+    ".tmp/journey-mobile-2d.png",
+    ".tmp/journey-extension.png"
+  ]
+}

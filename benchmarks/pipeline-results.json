@@ -1,0 +1,62 @@
+{
+  "measured_at": "2026-11-16T22:20:17Z",
+  "cpu_only": true,
+  "mode": "local",
+  "method": "One serial synthetic request per language and pipeline, including API, retrieval, CPU worker startup/loading and output validation. No clinical quality certification.",
+  "measurements": [
+    {
+      "pipeline": "rag",
+      "language": "fr",
+      "wall_ms": 4708,
+      "http_status": 200,
+      "status": "completed",
+      "source_count": 1,
+      "candidate_count": 0,
+      "limitations": [
+        "LOCAL_EXTRACTIVE_SELECTION",
+        "SMALL_LOCAL_MODEL_REVIEW_SOURCES"
+      ]
+    },
+    {
+      "pipeline": "recommendation",
+      "language": "fr",
+      "wall_ms": 19213,
+      "http_status": 200,
+      "status": "completed",
+      "source_count": 0,
+      "candidate_count": 8,
+      "limitations": [
+        "DEMO_CATALOGUE_NOT_MINISTRY_APPROVAL",
+        "SYSTEM_ONE_RESOURCE_SCORES_UNCALIBRATED",
+        "LOCAL_EXTRACTIVE_SELECTION"
+      ]
+    },
+    {
+      "pipeline": "rag",
+      "language": "ar",
+      "wall_ms": 10939,
+      "http_status": 200,
+      "status": "completed",
+      "source_count": 1,
+      "candidate_count": 0,
+      "limitations": [
+        "LOCAL_EXTRACTIVE_SELECTION",
+        "SMALL_LOCAL_MODEL_REVIEW_SOURCES"
+      ]
+    },
+    {
+      "pipeline": "recommendation",
+      "language": "ar",
+      "wall_ms": 17535,
+      "http_status": 200,
+      "status": "completed",
+      "source_count": 0,
+      "candidate_count": 8,
+      "limitations": [
+        "DEMO_CATALOGUE_NOT_MINISTRY_APPROVAL",
+        "SYSTEM_ONE_RESOURCE_SCORES_UNCALIBRATED",
+        "LOCAL_EXTRACTIVE_SELECTION"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "measured_at": "2026-11-16T22:16:29Z",
+  "platform": "Windows-11-10.0.22000-SP0",
+  "cpu": "Intel Core i5-12500H",
+  "logical_threads": 16,
+  "physical_cores": 12,
+  "total_ram_gib": 15.63,
+  "threads_per_model": 4,
+  "concurrency": 1,
+  "context_tokens": 2048,
+  "method": "Fresh worker per request, local filesystem cache may be warm; includes imports/model load; sampled process-tree RSS every 50 ms. Synthetic prompts, no professional quality certification.",
+  "measurements": [
+    {
+      "language": "fr",
+      "model": "embeddings",
+      "wall_ms": 1388,
+      "peak_process_tree_rss_mib": 439.2,
+      "status": "completed",
+      "elapsed_ms": 1110,
+      "timings": {
+        "provider_init_ms": 1090,
+        "inference_call_ms": 9
+      },
+      "dimension": 384,
+      "norms": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "relevant_similarity": 0.93074,
+      "unrelated_similarity": 0.85107
+    },
+    {
+      "language": "fr",
+      "model": "system-one",
+      "wall_ms": 14569,
+      "peak_process_tree_rss_mib": 2362.2,
+      "status": "completed",
+      "result": [
+        {
+          "id": "relevant",
+          "score": 59.7125,
+          "uncalibrated": true
+        },
+        {
+          "id": "unrelated",
+          "score": 52.912499999999994,
+          "uncalibrated": true
+        }
+      ],
+      "elapsed_ms": 13523,
+      "timings": {
+        "provider_init_ms": 13279,
+        "inference_call_ms": 234
+      }
+    },
+    {
+      "language": "fr",
+      "model": "slm",
+      "wall_ms": 1878,
+      "peak_process_tree_rss_mib": 923.5,
+      "status": "completed",
+      "result": {
+        "answer": "Dessiner ensemble pour exprimer les émotions.",
+        "source_ids": [
+          "guide-1"
+        ]
+      },
+      "elapsed_ms": 1763,
+      "timings": {
+        "provider_init_ms": 0,
+        "inference_call_ms": 1754,
+        "model_load_ms": 391.68,
+        "prompt_eval_ms": 391.07,
+        "generation_ms": 642.3,
+        "generation_tokens_per_second": 40.48
+      },
+      "grounded_exact_excerpt": true
+    },
+    {
+      "language": "ar",
+      "model": "embeddings",
+      "wall_ms": 1251,
+      "peak_process_tree_rss_mib": 427.7,
+      "status": "completed",
+      "elapsed_ms": 954,
+      "timings": {
+        "provider_init_ms": 936,
+        "inference_call_ms": 9
+      },
+      "dimension": 384,
+      "norms": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "relevant_similarity": 0.93027,
+      "unrelated_similarity": 0.85664
+    },
+    {
+      "language": "ar",
+      "model": "system-one",
+      "wall_ms": 11973,
+      "peak_process_tree_rss_mib": 2378.3,
+      "status": "completed",
+      "result": [
+        {
+          "id": "relevant",
+          "score": 49.76,
+          "uncalibrated": true
+        },
+        {
+          "id": "unrelated",
+          "score": 46.86,
+          "uncalibrated": true
+        }
+      ],
+      "elapsed_ms": 10854,
+      "timings": {
+        "provider_init_ms": 10493,
+        "inference_call_ms": 352
+      }
+    },
+    {
+      "language": "ar",
+      "model": "slm",
+      "wall_ms": 2178,
+      "peak_process_tree_rss_mib": 907.7,
+      "status": "completed",
+      "result": {
+        "answer": "الرسم الجماعي للتعبير عن المشاعر.",
+        "source_ids": [
+          "guide-1"
+        ]
+      },
+      "elapsed_ms": 2045,
+      "timings": {
+        "provider_init_ms": 0,
+        "inference_call_ms": 2036,
+        "model_load_ms": 518.51,
+        "prompt_eval_ms": 517.83,
+        "generation_ms": 823.45,
+        "generation_tokens_per_second": 32.79
+      },
+      "grounded_exact_excerpt": true
+    }
+  ]
+}

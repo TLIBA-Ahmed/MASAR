@@ -1,0 +1,54 @@
+{
+  "platform": "Docker Linux / Python 3.13",
+  "cpu_only": true,
+  "measurements": [
+    {
+      "model": "embeddings",
+      "language": "fr",
+      "http_status": 200,
+      "elapsed_ms": 2936,
+      "status": "completed",
+      "dimension": 384
+    },
+    {
+      "model": "system-one",
+      "language": "fr",
+      "http_status": 200,
+      "elapsed_ms": 29054,
+      "status": "completed"
+    },
+    {
+      "model": "slm",
+      "language": "fr",
+      "http_status": 200,
+      "elapsed_ms": 24114,
+      "status": "completed",
+      "cites_only_supplied_sources": true,
+      "answer": "La source S1 décrit la communication et la coopération entre les pays."
+    },
+    {
+      "model": "embeddings",
+      "language": "ar",
+      "http_status": 200,
+      "elapsed_ms": 2104,
+      "status": "completed",
+      "dimension": 384
+    },
+    {
+      "model": "system-one",
+      "language": "ar",
+      "http_status": 200,
+      "elapsed_ms": 21020,
+      "status": "completed"
+    },
+    {
+      "model": "slm",
+      "language": "ar",
+      "http_status": 200,
+      "elapsed_ms": 19327,
+      "status": "completed",
+      "cites_only_supplied_sources": true,
+      "answer": "التعاون"
+    }
+  ]
+}

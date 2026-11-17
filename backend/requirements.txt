@@ -1,0 +1,12 @@
+fastapi==0.136.0
+uvicorn==0.45.0
+SQLAlchemy==2.1.8
+pydantic==2.12.5
+alembic==1.20.1
+psycopg[binary]==3.3.9
+httpx==0.28.1
+python-multipart==0.0.34
+psutil==7.2.2
+pypdf==6.9.2
+cryptography==43.0.3
+pytest==9.0.3

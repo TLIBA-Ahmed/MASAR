@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.cache/
+.tmp/
+coverage/
+*.tsbuildinfo
+test-results/
+.env*
+!.env.example
+/.venv/
+/.env
+/.local-data/
+/infrastructure/model_artifacts/*
+!/infrastructure/model_artifacts/registry.json
+**/__pycache__/
+**/.pytest_cache/

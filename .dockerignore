@@ -1,0 +1,12 @@
+node_modules
+.venv
+.env
+.local-data
+.cache
+.tmp
+document de referrence
+infrastructure/model_artifacts
+dist
+tests
+benchmarks
+__pycache__
