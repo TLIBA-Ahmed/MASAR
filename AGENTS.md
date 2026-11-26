@@ -21,3 +21,7 @@ Application de démonstration Full Stack, React/TypeScript strict et backend Pyt
 - Autoriser côté serveur par rôle, centre, affectation active, scope, sensibilité et finalité contrôlée. Refus par défaut, RLS complémentaire sous rôle PostgreSQL non superutilisateur sans BYPASSRLS, contexte transactionnel isolé.
 - Aucun accès direct du frontend aux modèles, documents privés ou base. Aucune requête libre SQL par un modèle. Révoquer immédiatement indépendamment des index et caches. Ne pas loguer de contenu brut de dossier.
 - IA locale CPU uniquement, sans fallback cloud. L'accélération WebGL du navigateur pour la carte 3D est indépendante de cette exigence IA. Distinguer `AI_MODE=demo` de `AI_MODE=local` et signaler réellement les modèles indisponibles. Mettre à jour `docs/IMPLEMENTATION_STATUS.md` à chaque incrément et exécuter les tests backend en plus des contrôles frontend.
+
+## Nouvelles pièces CDIS (26/11/2026)
+
+Les sources complémentaires sont documentées dans `docs/CDIS_NEW_DOCUMENTS_AUDIT.md`. Les formulaires F16–F22 étendent F01–F15 sans duplication. Restreindre strictement F18–F22 au contexte psychologique avec vérification côté serveur ; aucune grille comportementale ne génère un score automatique de l'enfant. Le guide de Siliana est une référence de workflow local, sans remplacer les 5 étapes officielles. Toute évolution doit préserver les versions et les autorisations.
