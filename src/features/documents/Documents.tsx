@@ -66,7 +66,7 @@ export function Documents({ filter }: { filter?: 'interviews' | 'assessments' | 
           ? f.id === 'F01'
           : filter === 'assessments'
             ? ['F02', 'F08', 'F09', 'F12', 'F17', 'F18', 'F19', 'F22'].includes(f.id)
-            : ['F13', 'F14'].includes(f.id))) &&
+            : ['F13', 'F14', 'F16', 'F20', 'F21'].includes(f.id))) &&
       normalize(`${f.id} ${b(f.title)}`).includes(normalize(query)),
   );
   return (
@@ -75,8 +75,8 @@ export function Documents({ filter }: { filter?: 'interviews' | 'assessments' | 
         eyebrow={l('مصدر واحد للمعلومة', 'UNE SEULE SOURCE D’INFORMATION')}
         title={t(filter ?? 'documents')}
         description={l(
-          '15 نموذجاً مهنياً. بيانات تُكتب مرة واحدة، ووثائق تحفظ تاريخها.',
-          '15 modèles métier. Une saisie unique et des documents qui conservent leur histoire.',
+          `${forms.length} نموذجاً مهنياً. بيانات تُكتب مرة واحدة، ووثائق تحفظ تاريخها.`,
+          `${forms.length} modèles métier. Une saisie unique et des documents qui conservent leur histoire.`,
         )}
         actions={
           filter === 'projects' && (
