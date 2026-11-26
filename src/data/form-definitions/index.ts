@@ -1,3 +1,4 @@
+import { additionalForms } from './additional';
 import { bi } from '../../types';
 import type {
   Bi,
@@ -1392,4 +1393,6 @@ export const forms: FormDefinition[] = [
     ],
   ),
 ];
+// Only novel documents are registered here; F01–F15 remain stable and versioned.
+forms.push(...additionalForms);
 export const getForm = (id: string) => forms.find((form) => form.id === id);
