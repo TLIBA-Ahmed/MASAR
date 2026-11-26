@@ -65,7 +65,7 @@ export function Documents({ filter }: { filter?: 'interviews' | 'assessments' | 
         (filter === 'interviews'
           ? f.id === 'F01'
           : filter === 'assessments'
-            ? ['F02', 'F08', 'F09', 'F12'].includes(f.id)
+            ? ['F02', 'F08', 'F09', 'F12', 'F17', 'F18', 'F19', 'F22'].includes(f.id)
             : ['F13', 'F14'].includes(f.id))) &&
       normalize(`${f.id} ${b(f.title)}`).includes(normalize(query)),
   );
