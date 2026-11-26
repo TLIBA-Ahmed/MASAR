@@ -1,6 +1,6 @@
 # Catalogue des formulaires
 
-Les quinze formulaires sont des définitions `FormDefinition` dans `src/data/form-definitions/index.ts`. Ils partagent le même moteur et ne constituent pas quinze implémentations indépendantes. La liste `reference` conserve les noms des photographies associées pour faciliter les futures vérifications ; cette association ne certifie pas une transcription exhaustive des détails peu lisibles.
+Les quinze formulaires initiaux sont des définitions `FormDefinition` dans `src/data/form-definitions/index.ts`. Ils partagent le même moteur et ne constituent pas quinze implémentations indépendantes. La liste `reference` conserve les noms des photographies associées pour faciliter les futures vérifications ; cette association ne certifie pas une transcription exhaustive des détails peu lisibles.
 
 | ID  | Libellé arabe                           | Français                               | Étapes proposées |
 | --- | --------------------------------------- | -------------------------------------- | ---------------- |
@@ -33,3 +33,19 @@ F03 récupère date et heure du premier rendez-vous ouvert associé au dossier. 
 Les documents imprimables partagent un papier à en-tête MASAR, le centre, l’identifiant du dossier, la version et la mention de démonstration. Le rendu est un document HTML paginé par le navigateur ; l’export PDF passe par « Imprimer / Enregistrer en PDF ».
 
 Voir `QUESTIONS_TO_VALIDATE.md` pour les libellés incertains et les adaptations du formulaire social aux enfants.
+
+## Extension CDIS Siliana — 26 novembre 2026
+
+Sept définitions incrémentales **F16–F22** sont désormais ajoutées au même moteur (sans modifier les identifiants F01–F15). Les sources et décisions de réutilisation figurent dans [CDIS_NEW_DOCUMENTS_AUDIT.md](CDIS_NEW_DOCUMENTS_AUDIT.md).
+
+| ID | Titre arabe | Fonction | Confidentialité |
+|---|---|---|---|
+| F16 | التفكير في مشروع حياة | Projet de vie et souhaits exprimés | Éducative, sous accès au projet |
+| F17 | جدول ملاحظة | Grille d'observation longitudinale | Évaluation autorisée |
+| F18 | الملف النفسي | Dossier psychologique détaillé | Psychologique |
+| F19 | الوضع النفسي | État psychologique | Psychologique |
+| F20 | المشروع الإفرادي النفسي | Projet psychologique | Psychologique |
+| F21 | البرنامج الإفرادي النفسي | Programme psychologique | Psychologique |
+| F22 | خطة التعهد النفسي وتعديل السلوك | Plan psychologique et suivi comportemental ABC | Psychologique |
+
+Les nouvelles définitions sont structurées et utilisables comme brouillons et documents versionnés. Les pièces scannées et le long dossier psychologique nécessitent une comparaison visuelle détaillée avant de déclarer la transcription exhaustive. Pour que les modèles soient servis par PostgreSQL, il faut régénérer `database/seed_data/demo.json` et synchroniser les nouveaux IDs de `form_definitions` sans écraser les données existantes.

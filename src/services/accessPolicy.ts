@@ -111,9 +111,9 @@ export class AccessPolicyService {
       kind,
       caseId,
       sensitivity: getForm(formId)?.role === 'psychologist' ? 'psychological' : 'team',
-      requiredPermissions: ['F02', 'F08', 'F12'].includes(formId)
+      requiredPermissions: ['F02', 'F08', 'F12', 'F17', 'F18', 'F19', 'F22'].includes(formId)
         ? ['evaluation.read']
-        : ['F13', 'F14'].includes(formId)
+        : ['F13', 'F14', 'F16', 'F20', 'F21'].includes(formId)
           ? ['project.read']
           : [],
     };

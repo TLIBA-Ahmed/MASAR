@@ -405,7 +405,7 @@ export function CaseDetail() {
   const setTab = (tab: string) => setParams({ tab });
   const formMap: Record<string, string[]> = {
     interviews: ['F01'],
-    psychological: ['F12'],
+    psychological: ['F12', 'F18', 'F19', 'F20', 'F21', 'F22'],
     educational: ['F02'],
     multidisciplinary: ['F08', 'F09'],
     social: ['F15'],

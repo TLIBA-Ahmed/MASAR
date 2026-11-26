@@ -4,7 +4,7 @@ from .config import ROOT
 from .db import engine,one
 from .model_gateway.prompts import GROUNDING_PROMPT_VERSION
 
-CATEGORIES={'F01':'social','F04':'psychological','F12':'psychological','F15':'social','F13':'roadmap','F14':'roadmap','F08':'assessment','F09':'assessment','F03':'administrative','F07':'administrative','F10':'administrative'}
+CATEGORIES={'F01':'social','F04':'psychological','F12':'psychological','F18':'psychological','F19':'psychological','F20':'psychological','F21':'psychological','F22':'psychological','F15':'social','F13':'roadmap','F14':'roadmap','F08':'assessment','F09':'assessment','F03':'administrative','F07':'administrative','F10':'administrative'}
 def form_category(form_id): return CATEGORIES.get(form_id,'educational')
 def j(value): return json.dumps(value,ensure_ascii=False)
 def insert(conn,table,values,ignore_conflicts=True):
